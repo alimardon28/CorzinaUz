@@ -236,10 +236,10 @@ export class DataProvider extends Component {
 
   render() {
 
-    const {products} = this.state;
+    const {products , setProducts}= this.state;
 
     return (
-      <DataContext.Provider value={{products}}>
+      <DataContext.Provider value={{products , setProducts }}>
               {this.props.children}
       </DataContext.Provider>
     )
