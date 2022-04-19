@@ -1,0 +1,42 @@
+.header{
+    margin: 0;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: azure;
+}
+
+.header-box .logo{
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.navCard{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.span{
+    position: absolute;
+    padding: 0px 3px;
+    background-color: red;
+    color: #fff;
+    left: 20px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.headerLink{
+    margin: 0;
+    padding: 0;
+}
+
+.headerLink .bi-cart{
+    font-size: 30px;
+    color: #000;
+}
