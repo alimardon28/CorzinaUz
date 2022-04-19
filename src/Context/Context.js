@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-export const Context = React.createContext();
+export const DataContext = React.createContext();
 
-export class Provider extends Component {
+export class DataProvider extends Component {
   state = {
     products: [
       {
@@ -235,6 +235,13 @@ export class Provider extends Component {
   // https://olcha.uz/_nuxt/img/products-notfound.7e9e7ca.png
 
   render() {
-    return <></>;
+
+    const {products} = this.state;
+
+    return (
+      <DataContext.Provider value={{products}}>
+              {this.props.children}
+      </DataContext.Provider>
+    )
   }
 }
